@@ -70,7 +70,6 @@ useEffect(()=>{
         </select>
       </label>
       <br />
-      {selectedCountry && (
         <>
           <label>
             Select State:
@@ -83,8 +82,6 @@ useEffect(()=>{
           </label>
           <br />
         </>
-      )}
-      {selectedState && (
         <>
           <label>
             Select City:
@@ -97,7 +94,6 @@ useEffect(()=>{
           </label>
           <br />
         </>
-      )}
       {selectedCity && (
         <p>You selected {selectedCity}, {selectedState}, {selectedCountry}</p>
       )}
